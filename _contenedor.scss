@@ -1,0 +1,87 @@
+body{
+    background: rgb(8, 8, 17);
+    text-align: center;
+    .quien, .cuanto{
+        height: 50px;
+        font-size: 40px;
+        color: #fff;
+        text-transform: uppercase;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.contenedor{
+    @include tip(90%,auto,url(Imagenes/ajuno7.jpg), 10px auto, 10px, $borde,flex);
+    background-position: bottom;
+    background-attachment: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    .blancas, .negras{
+        color: #fff;
+        @include tip(40%,auto,rgba(173, 80, 4, 0.075), 10px auto, 10px, $borde,block);
+        text-align: center;
+        justify-content: center;
+        font-size: 50px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px #000;
+        box-sizing: border-box;
+    }
+    .boton, .boton1{
+        width: 50%;
+        height: 100px;
+        background: rgb(226, 87, 7);
+        color: #fff;
+        font-size: 40px;
+        border-radius: 20px;
+        box-shadow: 2px 4px -2px #fff;
+        transition: all .5s;
+        margin-bottom: 10px;
+        cursor: pointer;
+        &:hover{
+            filter: brightness(1.3);
+        }
+    }
+}
+.desactivo{
+filter: contrast(.5);
+color: #555;
+}
+@media (max-width: 700px){
+    body{
+        .quien, .cuanto{
+            font-size: 16px;
+        }
+    }
+    .contenedor{
+        .blancas, .negras{
+            font-size: 20px;
+        }
+        .boton, .boton1{
+            width: 80%;
+            font-size: 20px;
+        }
+}
+}
+.cont{
+    display: none;
+    width: 90%;
+}
+@media (max-width: 400px){
+    .contenedor{
+        display: grid;
+        height: auto;
+        .blancas, .negras{
+            width: 80%;
+            font-size: 20px;
+        }
+        .boton, .boton1{
+            width: 80%;
+            font-size: 20px;
+        }
+    }
+}

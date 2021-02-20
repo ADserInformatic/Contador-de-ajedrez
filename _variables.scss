@@ -1,0 +1,10 @@
+$borde: 1px solid #000;
+@mixin tip($ancho, $alto, $fondo, $margen, $margei, $borde, $dis) {
+    width: $ancho;
+    height: $alto;
+    background: $fondo;
+    margin: $margen;
+    padding: $margei;
+    border: $borde;
+    display: $dis;
+}

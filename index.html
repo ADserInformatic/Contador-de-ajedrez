@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contador ajedrez</title>
+    <link rel="stylesheet" href="ajedrez.css">
+</head>
+<body>
+    <div class="entrada">
+        <h2>¿A cuántos minutos desean jugar?</h2>
+        <input type="number" id="inp" placeholder="Solo números">
+        <button id="aceptar" class="aceptar">ACEPTAR</button>
+    </div>
+    <div id="cont" class="cont">
+        <h2 class="quien"></h2>
+        <h2 class="cuanto"></h2>
+        <div class="contenedor">
+            <div class="blancas">
+                <h1 id="blancas"><b id="min">0</b>:<b id="seg">0</b>:<b id="mil">0</b></h1>
+                <button class="boton" id="neg">Blancas</button>
+            </div>
+        
+            <div class="negras">
+                <h1 id="negras"><b id="min1">0</b>:<b id="seg1">0</b>:<b id="mil1">0</b></h1>
+                <button class="boton1" id="bla">Negras</button>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div class="botones">
+            <button id="par">Parar</button>
+            <button id="rei">Reiniciar</button>
+        </div>
+    </div>
+    
+
+    
+    
+    <script src="ajedrez.js"></script>
+</body>
+</html>

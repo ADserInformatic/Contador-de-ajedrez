@@ -1,0 +1,52 @@
+.entrada{
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    background: #01031fc2;
+    color: #fff;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    align-content: center;
+    padding: 20px;
+    transition: all 1s;
+    box-sizing: border-box;
+    input{
+        height: 30px;
+        font-size: 20px;
+    }
+    .aceptar{
+        display: block;
+        width: 170px;
+        height: 80px;
+        background: rgb(20, 8, 2);
+        color: #fff;
+        font-size: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 4px -2px #fff;
+        transition: all .5s;
+        margin: 20px auto;
+        cursor: pointer;
+        &:hover{
+            filter: brightness(2);
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .entrada{
+        width: 70%;
+        font-size: 20px;
+    }
+}
+@media (max-width: 400px){
+    .entrada{
+        width: 80%;
+    }
+    input{
+        font-size: 16px;
+        height: 20px;
+        width: 70%;
+    }
+}
